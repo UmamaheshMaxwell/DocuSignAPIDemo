@@ -1,4 +1,3 @@
-
 var DocuSign = require('docusign-api');
 var config = {
   email: 'laxmi.vaddipati@valuelabs.com',
@@ -18,14 +17,17 @@ var envelopeRequest = {
     name: 'Laxmi',
     email: 'maheshmeka16@gmail.com',
     clientUserId: '12345',
-     "textCustomFields": [{
+      customfields:{
+         "textCustomFields": [{
     "name":"primary|nameFirst",  
     "value":"Tulasi"
   },
   {
-    "name":"primay|nameLast",    
+    "name":"primary|nameLast",    
     "value":"Datti"
-  }]
+  }] 
+      }
+     
 
   }],
   transformPdfFields: true,
